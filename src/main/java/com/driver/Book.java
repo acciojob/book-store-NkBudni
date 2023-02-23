@@ -14,15 +14,17 @@ public class Book {
 
      }
 
-     public Book(int id, String name, String genre, String author) {
-          this.id = 0;
-          this.name = name;
-          this.genre = genre;
-          this.author = author;
-     }
+
 
      public int getId() {
           return id;
+     }
+
+     public Book(String name, String genre, String author) {
+          this.name = name;
+          this.genre = genre;
+          this.author = author;
+          this.id=0;
      }
 
      public void setId(int id) {
